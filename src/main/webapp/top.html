@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<title>SmartHome　―メインメニュー―</title>
+	<link rel="stylesheet" href="./css/top.css">
+</head>
+
+
+<script type="text/javascript">
+
+function clickmenu(btnName){
+	//変数宣言
+	var btnMenu = document.getElementById(btnName);
+	var objClass=btnMenu.getAttribute('class');
+	
+	//押下されたボタンをスライドアウト
+	if(objClass == 'button_menu_open'){
+		btnMenu.className='button_menu_close';
+	}
+	else{
+		btnMenu.className='button_menu_open';
+	}
+	
+	//ボタンがスライドアウトしてから画面遷移（おしゃれだから）
+	setTimeout(function(){
+		switch (btnName) {
+			case 'buttonA':
+				location.href='./BusinessPlan';
+				break;
+			case 'buttonB':
+				location.href='./FXtrade';
+				break;
+			case 'buttonC':
+				location.href='https://quote.jpx.co.jp/jpx/template/quote.cgi?F=tmp/hist_index&basequote=151_1968&begin=1968/01/01&end=2022/12/29&mode=M&histtype=CSV&f1=1968&f2=01&f3=01&t1=2022&t2=12&t3=29&x1=2022&x2=12&x3=29&term=&type=1';
+				break;
+			case 'buttonD':
+				location.href='./youtube/search.jsp';
+				break;
+			case 'buttonE':
+				location.href='./Stock';
+				break;
+			case 'buttonBA':
+				location.href='./StockMarket';
+				break;
+			default:
+				location.href='./MainMenu.html';
+				break;
+		}
+	},500);
+}
+</script>
+
+<body>
+
+<!-- ダッシュボード -->
+<div id="dashbord" style="height:25%">
+	<input type="text" value="最後にグラフ化する" />
+	<input type="text" value="aaaa" />
+	<br/>
+	<input type="button" value="登録">
+</div>
+
+
+<!-- メニュー -->
+<div id="menu" style="height:70%">
+	<input type="button" class="button_menu_open" id="buttonA" onClick="clickmenu(this.getAttribute('id'))" value="事業計画">
+	<input type="button" class="button_menu_open" id="buttonB" onClick="clickmenu(this.getAttribute('id'))" value="FXトレード日誌">
+	<input type="button" class="button_menu_open" id="buttonC" onClick="clickmenu(this.getAttribute('id'))" value="地図メモ">
+	<br/>
+	<br/>
+	<input type="button" class="button_menu_open" id="buttonD" onClick="clickmenu(this.getAttribute('id'))" value="YouTube検索">
+	<input type="button" class="button_menu_open" id="buttonE" onClick="clickmenu(this.getAttribute('id'))" value="株式分析">
+	<input type="button" class="button_menu_open" id="buttonF" onClick="clickmenu(this.getAttribute('id'))" value="F">
+</div>
+
+<div>株式分析</div>
+<div id="menu" style="height:70%">
+	<input type="button" class="button_menu_open" id="buttonBA" onClick="clickmenu(this.getAttribute('id'))" value="市況分析">
+	<input type="button" class="button_menu_open" id="buttonBB" onClick="clickmenu(this.getAttribute('id'))" value="セクター別分析">
+	<input type="button" class="button_menu_open" id="buttonBC" onClick="clickmenu(this.getAttribute('id'))" value="監視銘柄">
+</div>
+
+
+</body>
+
+</html>

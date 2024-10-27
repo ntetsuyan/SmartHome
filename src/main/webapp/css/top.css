@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+/*** VARIABLES ***/
+/* Colors */
+$black: #1d1f20;
+$blue: #83e4e2;
+$green: #a2ed56;
+$yellow: #fddc32;
+$white: #fafafa;
+
+html,body{
+	height: 100%;
+    /* background-color: #e6e6fa; */
+}
+
+/* メニューボタンの装飾 */
+.button_menu_open{
+	width: 33%;
+	height:200px;
+	border-color: #e6e6fa;                          /* 枠線の色は「白」 */
+	border-radius: 0.75em 0.75em 0.75em 0.75em;  /* 4つ角を丸くする */
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.3);  /* 影をつける */
+	font-family: "Nico Moji";
+}
+.button_menu_close{
+	width: 33%;
+	height:200px;
+	border-color: #e6e6fa;                          /* 枠線の色は「白」 */
+	border-radius: 0.75em 0.75em 0.75em 0.75em;  /* 4つ角を丸くする */
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.3);  /* 影をつける */
+}
+
+/* メニューボタンにマウスポインタが載った際の装飾 */
+.button_menu_open:hover {
+	color: green;                /* タブの文字色：緑色 */
+    background-color: #87cefa;   /* タブの背景色：淡い緑色 */
+    cursor: pointer;             /* マウスポインタの形状を「指(指し示す形)」にする */
+}
+.button_menu_close:hover {
+	color: green;                /* タブの文字色：緑色 */
+    background-color: #87cefa;   /* タブの背景色：淡い緑色 */
+    cursor: pointer;             /* マウスポインタの形状を「指(指し示す形)」にする */
+}
+
+/* メニューボタンが押された時の動作 */
+.button_menu_close {
+  transition: all 1s ease;
+}
+#buttonA.button_menu_close {
+  transform: translateX(-1000%);
+}
+#buttonB.button_menu_close {
+  transform: translateY(-1000%);
+}
+#buttonC.button_menu_close {
+  transform: translateX(1000%);
+}
+#buttonD.button_menu_close {
+  transform: translateX(-1000%);
+}
+#buttonE.button_menu_close {
+  transform: translateY(1000%);
+}
+#buttonF.button_menu_close {
+  transform: translateX(1000%);
+}
+
+
+/************ その他、他ページで使えそうなおしゃれ装飾 *********************/
+/* メモ帳風divのスタイル定義 */
+.div_memostyle {
+  position: relative;
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+/* ドッグイヤーを付ける */
+.div_memostyle:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff #a8d4ff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* ul◇のスタイル定義 */
+ul.ul_square {
+	padding: 0.5em;
+	list-style: none;
+}
+ul.ul_square li {
+	position: relative;
+	padding: 0.5em 1em 0.5em 2.3em;
+	margin-bottom:5px;
+	border-bottom: 1px solid rgba(255,143,0,1);
+}
+ul.ul_square li:after,
+ul.ul_square li:before {
+	content:'';
+	position: absolute;
+	transform: rotate(45deg);
+}
+ul.ul_square li:before {
+	top: 0.7em;
+	left: 0.2em;
+	width: 12px;
+	height: 12px;
+	border:2px solid rgba(255,143,0,1);
+}
+ul.ul_square li:after {
+	top: 0.9em;
+	left: 0.7em;
+	width: 14px;
+	height: 14px;
+	background: rgba(255,143,0,0.5);
+	transform: rotate(60deg);
+}
+
+

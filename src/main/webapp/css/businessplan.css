@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+/*** VARIABLES ***/
+/* Colors */
+$black: #1d1f20;
+$blue: #83e4e2;
+$green: #a2ed56;
+$yellow: #fddc32;
+$white: #fafafa;
+
+html,body{
+	height: 100%;
+    /* background-color: #e6e6fa; */
+}
+
+.div_list_line {
+	width:100%;
+	display:flex;
+}
+
+.div_list_cell1{
+	width:5%
+}
+.div_list_cell2{
+	width:54%
+}
+.div_list_cell3{
+	width:7%
+}
+.div_list_cell4{
+	width:7%
+}
+.div_list_cell5{
+	width:7%
+}
+.div_list_cell6{
+	width:10%
+}
+.div_list_cell7{
+	width:10%
+}
+
+input[type="button"] {
+	cursor:pointer;
+}
+
+
+input[type="text"].pace {
+	width:20px;
+}
+
+select.select_short {
+	width:50px;
+}
+select.select_middle {
+	width:70px;
+}
+
+
+textarea {
+	width:98%;
+}
+textarea.businessplan {
+	rows=5;
+}
+
+.cp_link {
+	display: inline-block;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+.cp_link span {
+	display: inline-block;
+	position: relative;
+	padding: 0.1em 0.3em;
+	transition: .4s;
+	transform-origin: 50% 0%;
+	transform-style: preserve-3d;
+}
+.cp_link span:after {
+	display: inline-block;
+	position: absolute;
+	padding: 0.1em 0.3em;
+	left: 0;
+	top: 0;
+	content: attr(data-text);
+	color: #fff;
+	background-color: #00ACC1;
+	transform-origin: 50% 0%;
+	transform: translate3d(0, 105%, 0) rotateX(-90deg);
+}
+.cp_link:hover span {
+	background-color: #00ACC1;
+	transform: translate3d(0, 0, -30px) rotateX(90deg);
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.div_frame{
+	width:55%;
+}
+.div_title1{
+	
+}
+.textarea1{
+	width:100vh;
+	ime-mode:active;
+	}
+.textarea2{
+	width:70vh;
+	ime-mode:active;
+	}
+.textarea3{
+	width:15vh;
+	ime-mode:active;
+	}
+.textarea4{
+	width:100vh;
+	ime-mode:active;
+	}
+.TradeJournalList:hover {
+	color: green;                /* タブの文字色：緑色 */
+	background-color: #ccffcc;   /* タブの背景色：淡い緑色 */
+	cursor: pointer;             /* マウスポインタの形状を「指(指し示す形)」にする */
+	} 
+	
+.h1 {
+	width:120px;
+	color: #505050;/*文字色*/
+	padding: 0.5em;/*文字周りの余白*/
+	display: inline-block;/*おまじない*/
+	line-height: 1.3;/*行高*/
+	background: #dbebf8;/*背景色*/
+	vertical-align: middle;
+	border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+
+.h1:before {
+	content: '●';
+	color: white;
+	margin-right: 8px;
+}
+
+
+.h2 {
+  position: relative;
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+
+.h2:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff #a8d4ff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}

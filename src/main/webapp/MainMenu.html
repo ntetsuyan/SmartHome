@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<title>SmartHome　―メインメニュー―</title>
+	<link rel="stylesheet" href="./css/smarthome.css">
+	
+</head>
+
+<script src="./js/smarthome.js"></script>
+
+<body>
+<div class="tabbox">
+
+	<!-- タブ表示 -->
+	<input type="radio" name="globaltabset" id="dashbord" checked>
+	<label class="globaltab" for="dashbord">ダッシュボード</label>
+	
+	<input type="radio" name="globaltabset" id="budget">
+	<label class="globaltab" for="budget">収支管理</label>
+	
+	<input type="radio" name="globaltabset" id="trade">
+	<label class="globaltab" for="trade">FXトレード日誌</label>
+	
+	<input type="radio" name="globaltabset" id="lifehack">
+	<label class="globaltab" for="lifehack">Youtube検索</label>
+	
+	<input type="radio" name="globaltabset" id="businessplan">
+	<label class="globaltab" for="businessplan">事業計画</label>
+
+	<input type="radio" name="globaltabset" id="security">
+	<label class="globaltab" for="security">株式投資</label>
+
+	<!-- タブ別のパネル -->
+	<div id="tab_panel1" class="tab_panel">
+		<iframe src="./FXtrade" width=100% height=100%></iframe>
+	</div>
+
+	<div id="tab_panel2" class="tab_panel">
+		<div style="height:50%">
+			<iframe src="./register.html" width=60% height="100%"></iframe>
+			<iframe src="./register4.html" width=38% height="100%"></iframe>
+		</div>
+		<div>
+			<iframe src="./register3" width=99%></iframe>
+		</div>
+	</div>
+
+	<div id="tab_panel3" class="tab_panel">
+		<iframe src="https://quote.jpx.co.jp/jpx/template/quote.cgi?F=tmp/hist_index&basequote=151_1968&begin=1968/01/01&end=2022/12/29&mode=M&histtype=CSV&f1=1968&f2=01&f3=01&t1=2022&t2=12&t3=29&x1=2022&x2=12&x3=29&term=&type=1"></iframe>
+		<iframe src="https://quote.jpx.co.jp/jpx/template/quote.cgi?F=tmp/hist_index&basequote=321_1968&begin=1968/01/01&end=2022/12/29&mode=M&histtype=CSV&f1=1968&f2=01&f3=01&t1=2022&t2=12&t3=29&x1=2022&x2=12&x3=29&term=&type=1"></iframe>
+	</div>
+
+	<div id="tab_panel4" class="tab_panel">
+		<iframe src="./youtube/search.html" width=100% height=100%></iframe>
+	</div>
+
+	<div id="tab_panel5" class="tab_panel">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4835.415489235314!2d139.48408501305363!3d35.92292470733082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018da6141acb0ad%3A0xb93b6f615532ff61!2z5pmC44Gu6ZCY!5e0!3m2!1sja!2sjp!4v1532789954640" width=100% height=100%  style="border:0"></iframe>
+	</div>
+	
+	
+	<div id="tab_panel6" class="tab_panel">
+		<iframe src="./FXtrade" width=100% height=100%></iframe>
+	</div>
+</div>
+
+</body>
+</html>
